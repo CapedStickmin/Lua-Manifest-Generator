@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam Game Manifest Download</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="notification-overlay">
+        <div id="notification" class="notification" style="display: none;">
+            <div class="notification-content">
+                <i class="fas fa-exclamation-circle"></i>
+                <span class="notification-message">Please enter a valid Steam Game ID</span>
+            </div>
+            <button class="notification-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="title-container">
+            <h1 data-text="Steam Manifest Generator">Steam Manifest Generator</h1>
+            <i class="fas fa-fire glow-icon"></i>
+        </div>
+        <div class="search-container">
+            <input type="text" id="gameId" placeholder="Enter Steam Game ID (e.g., 1229490)">
+            <button id="searchBtn">Download</button>
+        </div>
+        <div id="loading" class="loading" style="display: none;">
+            <div class="spinner"></div>
+            <p>Downloading...</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
